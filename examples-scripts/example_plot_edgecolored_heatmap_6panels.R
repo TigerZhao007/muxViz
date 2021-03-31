@@ -1,4 +1,5 @@
 library("muxViz")
+library("reshape2") #need melt() function
 
 #Or build by specifying layers
 Layers <- 3

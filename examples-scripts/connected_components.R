@@ -44,7 +44,7 @@ lvc <- GetGiantViableComponent(M,Layers,Nodes)
 
 #Generate the coordinates for layouting our networks and other network properties
 for(l in 1:Layers){
-    V(g.list[[l]])$deg <- deg
+    V(g.list[[l]])$deg <- 'deg'
     V(g.list[[l]])$color.lcc <- "0"
     V(g.list[[l]])$color.lcc[lcc] <- "1"
     V(g.list[[l]])$alpha.lcc <- 0.2
